@@ -10,7 +10,7 @@ import java.util.Scanner;
 	
 	Scanner entrada = new Scanner(System.in);
 	
-	System.out.print("Digite a operação desejada (+) ");
+	System.out.print("Digite a operação desejada (+ ou -): ");
 	operacao = entrada.nextLine();
 	
 	System.out.println("Digite um valor: ");
@@ -22,6 +22,11 @@ import java.util.Scanner;
 	if(operacao.equals("+")) {
 		System.out.println("O resultado da adição é: " +(n1 + n2));
 		control++;			
+	}
+   
+   if(operacao.equals("-")) {
+		System.out.println("O resultado da subtração é: " +(n1 - n2));
+		control++;		
 	}
 	
 	if(control == 0) {
